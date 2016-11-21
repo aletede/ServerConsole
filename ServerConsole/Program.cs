@@ -46,6 +46,7 @@ namespace ServerConsole
                     {
                         totalBytesRcvd += byteRcvd;
                     }
+
                     Console.WriteLine("Received {0} bytes from client: {1}", totalBytesRcvd, Encoding.ASCII.GetString(rcvBuffer, 0, totalBytesRcvd));
                 }
                 catch (Exception e)
